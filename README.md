@@ -64,6 +64,8 @@ After preprocessing the data and splitting it into training and testing sets, th
 
 The performance of each model was assessed using standard classification metrics: Accuracy, F1 Score, Precision, and Recall. The results are summarized below and visualized in the accompanying bar plot:
 
+<img width="989" height="590" alt="download" src="https://github.com/user-attachments/assets/f16613e3-b313-44a5-bdd9-c4321cdabf0e" />
+
 | Metric     | Logistic Regression | SVM   | LSTM  |
 |------------|---------------------|-------|-------|
 | Accuracy   | 0.959               | 0.964 | 0.964 |
