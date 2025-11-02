@@ -1,4 +1,4 @@
-%%markdown
+%markdown
 # Fake News Detection for Indian News
 
 Fake news poses a significant threat to society by spreading misinformation, influencing public opinion, and eroding trust in legitimate news sources. In the context of Indian news, where a large and diverse population relies on various platforms for information, detecting fake news is crucial to maintain a well-informed citizenry and prevent the spread of harmful narratives. This project aims to address this challenge by developing machine learning and deep learning models to classify Indian news as either real or fake. We explore various approaches, including Logistic Regression, SVM, and LSTM. Based on our experiments, the LSTM model demonstrated the highest accuracy in identifying fake news.
