@@ -87,7 +87,7 @@ Future work could involve addressing the class imbalance more explicitly using t
 
 ## References
 
-*   **Dataset Source:** The dataset `IFND.csv` is from the Fake News Detection for Indian News repository/source (specify the exact source or URL if available).
+*   **Dataset Source:** The dataset `IFND.csv` is from the Fake News Detection for Indian News repository/source (https://www.kaggle.com/datasets/sonalgarg174/ifnd-dataset?resource=download).
 *   **Libraries Used:**
     *   [Pandas](https://pandas.pydata.org/)
     *   [NumPy](https://numpy.org/)
