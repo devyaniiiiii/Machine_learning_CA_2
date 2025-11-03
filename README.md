@@ -141,7 +141,6 @@ text_stop = ' '.join([w for w in text_clean.split() if w not in STOPWORDS])
 #### 1. Label Distribution
 
 <img width="1189" height="590" alt="Image" src="https://github.com/user-attachments/assets/09abbe49-9fed-4c43-9789-ff4c7ab0e9d4" />
-![Label Distribution](https://github.com/user-attachments/assets/f16613e3-b313-44a5-bdd9-c4321cdabf0e)
 
 **Observation:** Significant class imbalance with real news dominating the dataset. This necessitates careful evaluation using metrics beyond accuracy.
 
