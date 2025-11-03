@@ -144,6 +144,8 @@ text_stop = ' '.join([w for w in text_clean.split() if w not in STOPWORDS])
 
 **Observation:** Significant class imbalance with real news dominating the dataset. This necessitates careful evaluation using metrics beyond accuracy.
 
+<img width="1169" height="913" alt="Image" src="https://github.com/user-attachments/assets/e9e61ee0-fd41-4fb7-9214-1b0d026ebe85" />
+
 #### 2. Top News Sources
 
 Most frequent web sources:
