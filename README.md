@@ -175,6 +175,8 @@ Top categories by frequency:
 - Phrases often related to sensational claims
 - More emotional and urgent language patterns
 
+<img width="1239" height="676" alt="Image" src="https://github.com/user-attachments/assets/f73e1a1d-efd6-4c6e-8539-034341a52900" />
+
 **Top Bigrams in Real News:**
 - More factual and neutral terminology
 - References to official sources and verified information
@@ -201,6 +203,9 @@ lr.fit(X_train_tfidf, y_train)
 ```
 
 #### Rationale
+
+<img width="765" height="621" alt="Image" src="https://github.com/user-attachments/assets/4810680f-6c8a-410d-94c5-b1ba7b908550" />
+
 Logistic Regression serves as a strong baseline for text classification, offering interpretability and computational efficiency.
 
 ---
@@ -221,6 +226,9 @@ calibrated_svc.fit(X_train_tfidf, y_train)
 ```
 
 #### Rationale
+
+<img width="802" height="616" alt="image" src="https://github.com/user-attachments/assets/0ce83c81-a6db-4ebd-bf85-d136cf0d63d8" />
+
 SVMs excel at finding optimal decision boundaries in high-dimensional spaces, often outperforming simpler linear models.
 
 ---
@@ -271,6 +279,9 @@ model = Sequential([
 ```
 
 #### Rationale
+
+<img width="755" height="610" alt="Image" src="https://github.com/user-attachments/assets/0db9a8ff-ba28-4e90-ab14-40e21080a5d4" />
+
 LSTMs capture sequential dependencies and contextual information in text, making them ideal for understanding nuanced language patterns that distinguish fake from real news.
 
 ---
@@ -279,7 +290,7 @@ LSTMs capture sequential dependencies and contextual information in text, making
 
 ### Performance Metrics
 
-![Model Performance Comparison](https://github.com/user-attachments/assets/f16613e3-b313-44a5-bdd9-c4321cdabf0e)
+<img width="846" height="547" alt="Image" src="https://github.com/user-attachments/assets/82d6dc10-9e1b-480b-8f73-3c9f39fc8661" />
 
 | Metric     | Logistic Regression | SVM   | LSTM  |
 |------------|---------------------|-------|-------|
@@ -310,6 +321,8 @@ LSTMs capture sequential dependencies and contextual information in text, making
   - Slower training time
   - Requires more computational resources
 - 📊 **Use Case:** **Recommended for fake news detection** where catching misinformation is critical
+
+<img width="790" height="717" alt="Image" src="https://github.com/user-attachments/assets/3690c971-69a1-40b9-b87f-4127adb7c252" />
 
 ### Key Insights
 
