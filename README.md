@@ -408,77 +408,6 @@ For deployment in a fake news detection system:
 - **Alternative:** SVM for faster inference with acceptable performance
 - **Not Recommended:** Logistic Regression alone (too many false negatives)
 
-### Practical Deployment Considerations
-
-1. **Real-time Detection:** SVM offers faster inference
-2. **Batch Processing:** LSTM can process larger volumes with GPU acceleration
-3. **Hybrid Approach:** Use SVM for first-pass filtering, LSTM for final verification
-4. **Human Review:** Flag borderline cases (confidence < 0.7) for manual review
-
----
-
-## Future Work
-
-### Recommended Improvements
-
-#### 1. Address Class Imbalance More Explicitly
-- **SMOTE (Synthetic Minority Over-sampling Technique)** to generate synthetic fake news examples
-- **Undersampling** real news to balance the dataset
-- **Cost-sensitive learning** with custom loss functions
-
-#### 2. Advanced Deep Learning Models
-- **BERT (Bidirectional Encoder Representations from Transformers)**
-  - Pre-trained on large corpora
-  - Superior contextual understanding
-- **RoBERTa** or **DistilBERT** for efficiency
-- **XLNet** for capturing bidirectional context
-
-#### 3. Multi-modal Features
-- **Source Credibility Scores:** Incorporate website reputation
-- **Author Information:** Track author history and credibility
-- **Metadata Features:** Publication date, article length, social shares
-- **Network Analysis:** Propagation patterns on social media
-
-#### 4. Explainable AI (XAI)
-- **LIME (Local Interpretable Model-agnostic Explanations)** to explain predictions
-- **SHAP (SHapley Additive exPlanations)** for feature importance
-- **Attention Visualization** to highlight influential words/phrases
-- Build trust by showing users WHY an article was flagged
-
-#### 5. Multilingual Support
-- Extend to Hindi, Tamil, Telugu, and other Indian languages
-- Use multilingual BERT (mBERT) or XLM-R
-- Address code-mixing (Hinglish) in Indian social media
-
-#### 6. Real-time Deployment
-- **Model Optimization:** Quantization, pruning for faster inference
-- **API Development:** RESTful API for integration with news platforms
-- **Browser Extension:** Real-time fact-checking while browsing
-- **Continuous Learning:** Update model with new fake news patterns
-
-#### 7. Domain-Specific Models
-- Separate models for different categories (Politics, Health, Finance)
-- Fine-tune on category-specific data for better performance
-
----
-
-## Technical Specifications
-
-### Hardware Requirements
-- **Minimum:** 8GB RAM, CPU (for ML models)
-- **Recommended:** 16GB RAM, GPU (for LSTM training)
-- **Cloud Option:** Google Colab with GPU runtime (free)
-
-### Training Time
-- **Logistic Regression:** ~2-3 minutes
-- **SVM:** ~5-10 minutes
-- **LSTM:** ~15-30 minutes (3-6 epochs with early stopping)
-
-### Model Sizes
-- **Logistic Regression:** ~160 MB (TF-IDF + model)
-- **SVM:** ~180 MB (TF-IDF + model)
-- **LSTM:** ~12 MB (tokenizer + model weights)
-
 ---
 
 ## References
@@ -566,32 +495,6 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("F1 Score:", f1_score(y_test, y_pred))
 print("Classification Report:\n", classification_report(y_test, y_pred))
 ```
-
----
-
-## License
-
-This project is for educational and research purposes. Please cite appropriately when using this code or dataset.
-
----
-
-## Contributing
-
-Contributions are welcome! Areas for improvement:
-- Additional model architectures (Transformer-based)
-- Multilingual support
-- Explainability features
-- Real-time deployment pipeline
-- Web application interface
-
----
-
-## Contact & Acknowledgments
-
-**Dataset Source:** IFND Dataset contributors on Kaggle  
-**Framework:** TensorFlow, scikit-learn, NLTK  
-**Environment:** Google Colab
-
 ---
 
 ## Appendix: Hyperparameter Tuning
@@ -615,7 +518,3 @@ Contributions are welcome! Areas for improvement:
 - `epochs`: 3 → 6 with early stopping
 
 ---
-
-**Project Status:** ✅ Completed  
-**Last Updated:** 2025  
-**Version:** 1.0
